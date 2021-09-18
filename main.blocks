@@ -1,0 +1,61 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="r(p9gA7?dx(;=m9^srnY">ruka2</variable></variables><block type="pxt-on-start" id="`3h1LCT9^w{gC61N?0hF" x="0" y="0"><statement name="HANDLER"><block type="device_show_leds" id="(bi/b}h17+[RSDI#@Q~)"><field name="LEDS">`
+        # . . . # 
+        . . # . . 
+        . # . # . 
+        . . # . . 
+        # . . . #
+        `</field><next><block type="radio_set_group" id="thpvT#cdjXo3z2;b)c_B"><value name="ID"><shadow type="math_number_minmax" id="P-ZZ!wL-eI(ltiSx*G#i"><mutation min="0" max="255" label="Number" precision="0"/><field name="SLIDER">1</field></shadow></value><next><block type="variables_set" id="vMT},ah{/_$o:U[4Bae{"><field name="VAR" id="r(p9gA7?dx(;=m9^srnY">ruka2</field><value name="VALUE"><shadow type="math_number" id="pE6+I4FW)9jy^~qR+Y`["><field name="NUM">0</field></shadow></value><next><block type="=JoyStickInit" id="m61$^@aHy4xn/H;Q3.dm"><next><block type="device_clear_display" id="VKsMwf7PKeL.4P+d1UU("/></next></block></next></block></next></block></next></block></statement></block><block type="device_forever" id="$`VTA3A~f](M)!wU^yIP" x="353" y="0"><statement name="HANDLER"><block type="controls_if" id="ysdvJcXtdJ4-h/_BI$.5"><mutation elseif="8"/><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="=Listen_Dir" id="excS]~-Dxu3{FJ;|hr/D"><field name="pin">DIR.NONE</field></block></value><statement name="DO0"><block type="radio_datagram_send_string" id="F4m`Ik-#bxgZh]!5;xf/"><value name="msg"><shadow type="text" id="9UQ.Y5]9VoSe+~Fi-SFD"><field name="TEXT">NONE</field></shadow></value><next><block type="device_show_leds" id="d`Q1WZ:5:5T`B,cF$O|w"><field name="LEDS">`
+        . . . . . 
+        . . # . . 
+        . # . # . 
+        . . # . . 
+        . . . . .
+        `</field></block></next></block></statement><value name="IF1"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="=Listen_Dir" id="L+aN1)6vpyR/aSa.u~I3"><field name="pin">DIR.U</field></block></value><statement name="DO1"><block type="radio_datagram_send_string" id="{1lE*pO!897b%)#*MLAh"><value name="msg"><shadow type="text" id="Ail^(2wCc28H0LY:g*Ej"><field name="TEXT">U</field></shadow></value><next><block type="device_show_leds" id=")wKY2]u#0@2(3RH94inW"><field name="LEDS">`
+        . . # . . 
+        . # . # . 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field></block></next></block></statement><value name="IF2"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="=Listen_Dir" id="|#h8h@n9Hsti$Kg$,se]"><field name="pin">DIR.D</field></block></value><statement name="DO2"><block type="radio_datagram_send_string" id="3SVS%7YiYt[eD;Nec5X`"><value name="msg"><shadow type="text" id="D^=;Vcqo5jA}V}0yu!k_"><field name="TEXT">D</field></shadow></value><next><block type="device_show_leds" id="W*/uC#I]18J0T=OESuTT"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . # . # . 
+        . . # . .
+        `</field></block></next></block></statement><value name="IF3"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="=Listen_Dir" id="}e_aJ-t,K6y#vk:,bjf,"><field name="pin">DIR.L</field></block></value><statement name="DO3"><block type="radio_datagram_send_string" id="rq]A@[B(Hv`@-Qx2-Iof"><value name="msg"><shadow type="text" id="(aR.9YmB6{[P)LG!7N0E"><field name="TEXT">L</field></shadow></value><next><block type="device_show_leds" id="fbK@pRx}BicOsuJOV-${"><field name="LEDS">`
+        . . . . . 
+        . # . . . 
+        # . . . . 
+        . # . . . 
+        . . . . .
+        `</field></block></next></block></statement><value name="IF4"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="=Listen_Dir" id="!3P~0]9~[?yYN3LG~kD["><field name="pin">DIR.R</field></block></value><statement name="DO4"><block type="radio_datagram_send_string" id="IL%ff7I3x)[99{3SfT-2"><value name="msg"><shadow type="text" id="[-wQY2ev/o|;5nX7C-`$"><field name="TEXT">R</field></shadow></value><next><block type="device_show_leds" id="FF8]6mU)azn1s6r_)t_c"><field name="LEDS">`
+        . . . . . 
+        . . . # . 
+        . . . . # 
+        . . . # . 
+        . . . . .
+        `</field></block></next></block></statement><value name="IF5"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="=Listen_Dir" id="pRvr)Lq?fGW*ZZP*YaZu"><field name="pin">DIR.U_L</field></block></value><statement name="DO5"><block type="radio_datagram_send_string" id="GIioc#b03AvR6B{Y8#)Q"><value name="msg"><shadow type="text" id=":ua1(*]BW/6_89uZ$YSr"><field name="TEXT">UL</field></shadow></value><next><block type="device_show_leds" id="%d{@oru+2(J+X:n/9|)b"><field name="LEDS">`
+        # # . . . 
+        # . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field></block></next></block></statement><value name="IF6"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="=Listen_Dir" id="Hw.G.hr|tbsae!*rFqrs"><field name="pin">DIR.U_R</field></block></value><statement name="DO6"><block type="radio_datagram_send_string" id="sS1qD`D4QgzaqsFAf6(*"><value name="msg"><shadow type="text" id="gt[?w5#x5I8JTw+Iej68"><field name="TEXT">UR</field></shadow></value><next><block type="device_show_leds" id="3G|%0Z6lb9?*wtX3{8A%"><field name="LEDS">`
+        . . . # # 
+        . . . . # 
+        . . . . . 
+        . . . . . 
+        . . . . .
+        `</field></block></next></block></statement><value name="IF7"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="=Listen_Dir" id="jL./gOv0m,-0uKe(J19Y"><field name="pin">DIR.D_L</field></block></value><statement name="DO7"><block type="radio_datagram_send_string" id="i8r;c7Hi/Z*^K;zQaWo!"><value name="msg"><shadow type="text" id=",g.HWdF3v/HrL0rmc,|~"><field name="TEXT">DL</field></shadow></value><next><block type="device_show_leds" id="(XYjo`E[eb/Q[zIY23a5"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        # . . . . 
+        # # . . .
+        `</field></block></next></block></statement><value name="IF8"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="=Listen_Dir" id="z/A|^{*wooiplp}XKoIz"><field name="pin">DIR.D_R</field></block></value><statement name="DO8"><block type="radio_datagram_send_string" id="(@vG:{X;~WChTVq2+Dl{"><value name="msg"><shadow type="text" id=";lKu],B@hEOGbkIRlk,1"><field name="TEXT">DR</field></shadow></value><next><block type="device_show_leds" id="-p5kgGRKVg?lsprXr+TQ"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        . . . . # 
+        . . . # #
+        `</field></block></next></block></statement><next><block type="controls_if" id="+XoM%GLff=[Bv#bC$wH!"><mutation elseif="6"/><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="=Listen_Key" id="|%x}+NK:l#~^-;$SfPQN"><field name="pin">KEY.P</field></block></value><statement name="DO0"><block type="radio_datagram_send_string" id="s#A9]%oq9~=_^,T9$_a?"><value name="msg"><shadow type="text" id="qf3ghs.G%9k~;4LaHJ{V"><field name="TEXT">PX</field></shadow></value></block></statement><value name="IF1"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="=Listen_Key" id="v?T;!`LSq7TM0|(KF5+N"><field name="pin">KEY.A</field></block></value><statement name="DO1"><block type="radio_datagram_send_string" id="`k;dBMwERIMG^?nzJSG4"><value name="msg"><shadow type="text" id="c~:/NE/TGm@l=Chg7+F8"><field name="TEXT">AX</field></shadow></value></block></statement><value name="IF2"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="=Listen_Key" id="[D}A+6yLbHfkL=Yt^P.8"><field name="pin">KEY.B</field></block></value><statement name="DO2"><block type="radio_datagram_send_string" id="ya~fv+$#CC*Wva[,`wIB"><value name="msg"><shadow type="text" id="KL)$WfEjSHAgL2RM8}M~"><field name="TEXT">BX</field></shadow></value></block></statement><value name="IF3"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="=Listen_Key" id="$:(j=A{_#u@7bZ/mAlOa"><field name="pin">KEY.C</field></block></value><statement name="DO3"><block type="controls_if" id="Hh267cw1f$W@MAMe,k)%"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="Rf^sgJ1[j`tRl,H^bIgP"><field name="OP">GT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="dNOP%/9D?#^nNW^m$Gfw"><field name="VAR" id="r(p9gA7?dx(;=m9^srnY">ruka2</field></block></value><value name="B"><shadow type="math_number" id="eIS4u?dVRpq]xGKyQ4lk"><field name="NUM">0</field></shadow></value></block></value><statement name="DO0"><block type="variables_change" id="?~)ACB)];R`Un+t-JCqT"><field name="VAR" id="r(p9gA7?dx(;=m9^srnY">ruka2</field><value name="VALUE"><shadow type="math_number" id="f!([*6-3V*sE^NdpMd:]"><field name="NUM">-1</field></shadow></value></block></statement><next><block type="radio_datagram_send_string" id="(O{~,A]jS|rm]FT3f^lS"><value name="msg"><shadow type="text" id="r%j%t$l44R[(`4kC21;Y"><field name="TEXT">CX</field></shadow></value></block></next></block></statement><value name="IF4"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="=Listen_Key" id="[b2zXH@V]2Y,*z3w3_`:"><field name="pin">KEY.D</field></block></value><statement name="DO4"><block type="radio_datagram_send_string" id="RZnwkHiVcd.x]7QNhr1p"><value name="msg"><shadow type="text" id="aWFuv*Bf`QgNd?wWGkvf"><field name="TEXT">DX</field></shadow></value></block></statement><value name="IF5"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="=Listen_Key" id="T?gNhR,BELVr*AfG$l@B"><field name="pin">KEY.E</field></block></value><statement name="DO5"><block type="controls_if" id="o#hWb-`oB/#PP93L[.ri"><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="O8/tg01a6WbTVxPI_nDp"><field name="OP">LT</field><value name="A"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="ldR_.f09.}naV}=PU/Xr"><field name="VAR" id="r(p9gA7?dx(;=m9^srnY">ruka2</field></block></value><value name="B"><shadow type="math_number" id="mrASU4cyB)}oYb!q7!ER"><field name="NUM">180</field></shadow></value></block></value><statement name="DO0"><block type="variables_change" id="iI#qSS|1S1_fqccIZ!:X"><field name="VAR" id="r(p9gA7?dx(;=m9^srnY">ruka2</field><value name="VALUE"><shadow type="math_number" id="3E5B.yAzg07w2^;k3b6!"><field name="NUM">1</field></shadow></value></block></statement><next><block type="radio_datagram_send_string" id="ZwEGn/}Ge{KV(}r9ve1W"><value name="msg"><shadow type="text" id="MeE3,|R(}aiIinbX#6(x"><field name="TEXT">EX</field></shadow></value></block></next></block></statement><value name="IF6"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="=Listen_Key" id="{a{X*tByp;Y%bhW*H7W]"><field name="pin">KEY.F</field></block></value><statement name="DO6"><block type="radio_datagram_send_string" id="X7`fTDqQ5rZf?BZ?zEuq"><value name="msg"><shadow type="text" id="$rw-%/G3YS@}4pGpL.5^"><field name="TEXT">FX</field></shadow></value></block></statement><next><block type="radio_datagram_send_value" id="Ix;T.td80(Bm0.2KPu/9"><value name="name"><shadow type="text" id="/we6Z]`kD30Y-7vfF5J@"><field name="TEXT">rameno2</field></shadow></value><value name="value"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="variables_get" id="vnCmie2Vmqom.)P#^$^L"><field name="VAR" id="r(p9gA7?dx(;=m9^srnY">ruka2</field></block></value></block></next></block></next></block></statement></block></xml>
